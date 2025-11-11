@@ -1,0 +1,25 @@
+              LABEL fire_goal_reached fired
+spin: elevator_constrained_fire_4_witness.pml:109, Error: assertion violated
+spin: text of failed assertion: assert(0)
+spin: trail ends after 45 steps
+#processes: 5
+		floor = 0
+		target = 0
+		mode = FIRE
+		door = OPEN
+		moving = 0
+		rq[0] = 0
+		rq[1] = 0
+		rq[2] = 0
+		rq[3] = 0
+		vip_req = 0
+		vip_dest = 0
+		sensor_ok = 1
+		weight = 0
+		door_obstructed = 0
+ 45:	proc  4 (Elevator:1) elevator_constrained_fire_4_witness.pml:64 (state 9)
+ 45:	proc  3 (Controller:1) elevator_constrained_fire_4_witness.pml:28 (state 34)
+ 45:	proc  2 (Monitor:1) elevator_constrained_fire_4_witness.pml:107 (state 22)
+ 45:	proc  1 (:init::1) elevator_constrained_fire_4_witness.pml:122 (state 2) <valid end state>
+ 45:	proc  0 (:init::1) elevator_constrained_fire_4_witness.pml:103 (state 20) <valid end state>
+5 processes created

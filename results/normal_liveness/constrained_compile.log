@@ -1,0 +1,7 @@
+In file included from pan.c:31:
+pan.h:211: warning: "Pinit" redefined
+  211 | #define Pinit   ((P2 *)_this)
+      | 
+pan.h:188: note: this is the location of the previous definition
+  188 | #define Pinit   ((P4 *)_this)
+      | 

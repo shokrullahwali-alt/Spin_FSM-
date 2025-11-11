@@ -1,0 +1,41 @@
+warning: no accept labels are defined, so option -a has no effect (ignored)
+
+(Spin Version 6.5.2 -- 6 December 2019)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	- (none specified)
+	assertion violations	+
+	acceptance   cycles 	- (not selected)
+	invalid end states	+
+
+State-vector 52 byte, depth reached 692, errors: 0
+   990132 states, stored
+  1578735 states, matched
+  2568867 transitions (= stored+matched)
+  3327603 atomic steps
+hash conflicts:     22249 (resolved)
+
+Stats on memory usage (in Megabytes):
+   75.541	equivalent memory usage for states (stored*(State-vector + overhead))
+   53.126	actual memory usage for states (compression: 70.33%)
+         	state-vector as stored = 28 byte + 28 byte overhead
+  128.000	memory used for hash table (-w24)
+    1.068	memory used for DFS stack (-m20000)
+  182.096	total actual memory usage
+
+
+unreached in proctype Controller
+	elevator_mvp.pml:86, state 54, "-end-"
+	(1 of 54 states)
+unreached in proctype Elevator
+	elevator_mvp.pml:122, state 22, "-end-"
+	(1 of 22 states)
+unreached in proctype Env
+	elevator_mvp.pml:150, state 21, "(1)"
+	(1 of 31 states)
+unreached in init
+	(0 of 22 states)
+
+pan: elapsed time 0.55 seconds
+pan: rate   1800240 states/second

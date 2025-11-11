@@ -1,0 +1,45 @@
+
+(Spin Version 6.5.2 -- 6 December 2019)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	- (none specified)
+	assertion violations	+
+	acceptance   cycles 	- (not selected)
+	invalid end states	+
+
+State-vector 60 byte, depth reached 174, errors: 0
+      158 states, stored
+     1157 states, matched
+     1315 transitions (= stored+matched)
+     6755 atomic steps
+hash conflicts:         0 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.013	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.280	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+    5.341	memory used for DFS stack (-m100000)
+  133.536	total actual memory usage
+
+
+unreached in proctype Controller
+	elevator_constrained_4.pml:37, state 6, "target = floor"
+	elevator_constrained_4.pml:40, state 10, "target = vip_dest"
+	elevator_constrained_4.pml:57, state 37, "-end-"
+	(3 of 37 states)
+unreached in proctype Elevator
+	elevator_constrained_4.pml:73, state 14, "moving = 0"
+	elevator_constrained_4.pml:76, state 18, "moving = 0"
+	elevator_constrained_4.pml:85, state 29, "moving = 0"
+	elevator_constrained_4.pml:94, state 43, "-end-"
+	(4 of 43 states)
+unreached in init
+	(0 of 20 states)
+unreached in proctype Monitor
+	elevator_constrained_4.pml:126, state 18, "-end-"
+	(1 of 18 states)
+unreached in init
+	(0 of 2 states)
+
+pan: elapsed time 0 seconds

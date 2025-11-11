@@ -1,0 +1,9 @@
+// Minimal properties for MVP (2-floor)
+// SAFETY properties are checked via inline assertions in the model.
+// The model contains: assert(!(moving && door == OPEN));
+// 
+// For liveness properties, use LTL formulas below:
+
+// Emergency: FIRE mode eventually leads to ground floor with door open and not moving
+// [] (mode == FIRE -> <> (floor == 0 && door == OPEN && !moving))
+

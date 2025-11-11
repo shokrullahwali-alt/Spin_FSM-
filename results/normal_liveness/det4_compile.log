@@ -1,0 +1,4 @@
+In file included from pan.c:31:
+pan.h:393:31: warning: built-in function ‘floor’ declared as non-function [-Wbuiltin-declaration-mismatch]
+  393 | /* hidden variable: */  uchar floor;
+      |                               ^~~~~

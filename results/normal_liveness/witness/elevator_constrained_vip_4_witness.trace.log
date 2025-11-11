@@ -1,0 +1,25 @@
+              LABEL vip_goal_reached fired
+spin: elevator_constrained_vip_4_witness.pml:110, Error: assertion violated
+spin: text of failed assertion: assert(0)
+spin: trail ends after 52 steps
+#processes: 5
+		floor = 2
+		target = 2
+		mode = VIP
+		door = OPEN
+		moving = 0
+		rq[0] = 0
+		rq[1] = 0
+		rq[2] = 0
+		rq[3] = 0
+		vip_req = 0
+		vip_dest = 2
+		sensor_ok = 1
+		weight = 0
+		door_obstructed = 0
+ 52:	proc  4 (Elevator:1) elevator_constrained_vip_4_witness.pml:62 (state 37)
+ 52:	proc  3 (Controller:1) elevator_constrained_vip_4_witness.pml:28 (state 34)
+ 52:	proc  2 (Monitor:1) elevator_constrained_vip_4_witness.pml:108 (state 23)
+ 52:	proc  1 (:init::1) elevator_constrained_vip_4_witness.pml:123 (state 2) <valid end state>
+ 52:	proc  0 (:init::1) elevator_constrained_vip_4_witness.pml:104 (state 20) <valid end state>
+5 processes created

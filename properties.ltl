@@ -1,0 +1,45 @@
+# LTL Properties for 4-Floor Elevator Model
+# ============================================
+
+# SAFETY PROPERTIES
+# -----------------
+# Safety properties are verified via inline assertions in elevator.pml:
+# - assert(!(moving && door == OPEN))  // Never move with door open
+#
+# Additional safety properties enforced by model logic and can be checked via assertions:
+# - SAFE mode: sensor failure -> stay stopped with door open
+# - Overload: weight > MAX_WEIGHT -> no movement, door open
+# - Obstruction: door_obstructed -> door reopens, no movement
+
+# LIVENESS PROPERTIES (LTL Formulas)
+# -----------------------------------
+# The following LTL formulas check liveness properties.
+# Uncomment one at a time for verification with: spin -f "formula" | spin -a -
+
+# L1: FIRE mode eventually brings elevator to ground floor with door open
+[] (mode == FIRE -> <> (floor == 0 && door == OPEN && !moving))
+
+# L2: VIP request eventually serviced (reaches vip_dest with door open)
+[] (vip_req -> <> (floor == vip_dest && door == OPEN && !moving))
+
+# L3: Normal requests eventually serviced (for each floor)
+[] ((mode == NORMAL && rq[0]) -> <> (floor == 0 && door == OPEN))
+[] ((mode == NORMAL && rq[1]) -> <> (floor == 1 && door == OPEN))
+[] ((mode == NORMAL && rq[2]) -> <> (floor == 2 && door == OPEN))
+[] ((mode == NORMAL && rq[3]) -> <> (floor == 3 && door == OPEN))
+
+# L4: SAFE mode persists (sensor failure is sticky)
+[] (mode == SAFE -> [] mode == SAFE)
+
+# L5: Sensor failure eventually leads to stopped elevator with open door
+[] (!sensor_ok -> <> (!moving && door == OPEN))
+
+# L6: Overload prevents movement
+[] (weight > MAX_WEIGHT -> (door == OPEN && !moving))
+
+# L7: Door obstruction keeps door open
+[] (door_obstructed -> door == OPEN)
+
+# NOTE: Some liveness properties may require fairness assumptions (-f flag in SPIN).
+# For initial safety verification, run without LTL formulas (just assertions).
+

@@ -1,0 +1,6 @@
+Depth=    3174 States=    1e+06 Transitions= 7.09e+07 Memory=  2859.519	t=     17.1 R=   6e+04
+Depth=    3174 States=    2e+06 Transitions= 1.55e+08 Memory=  2920.554	t=     37.2 R=   5e+04
+Depth=    3174 States=    3e+06 Transitions= 3.01e+08 Memory=  2981.589	t=     73.3 R=   4e+04
+Depth=    3205 States=    4e+06 Transitions= 4.21e+08 Memory=  3042.624	t=      103 R=   4e+04
+Depth=    3205 States=    5e+06 Transitions= 5.71e+08 Memory=  3103.659	t=      139 R=   4e+04
+Depth=    3205 States=    6e+06 Transitions= 7.92e+08 Memory=  3164.694	t=      193 R=   3e+04

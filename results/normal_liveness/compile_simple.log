@@ -1,0 +1,20 @@
+In file included from pan.c:31:
+pan.h:394:31: warning: built-in function ‘floor’ declared as non-function [-Wbuiltin-declaration-mismatch]
+  394 | /* hidden variable: */  uchar floor;
+      |                               ^~~~~
+In file included from pan.c:31:
+pan.h:394:31: warning: built-in function ‘floor’ declared as non-function [-Wbuiltin-declaration-mismatch]
+  394 | /* hidden variable: */  uchar floor;
+      |                               ^~~~~
+In file included from pan.c:31:
+pan.h:394:31: warning: built-in function ‘floor’ declared as non-function [-Wbuiltin-declaration-mismatch]
+  394 | /* hidden variable: */  uchar floor;
+      |                               ^~~~~
+In file included from pan.c:31:
+pan.h:394:31: warning: built-in function ‘floor’ declared as non-function [-Wbuiltin-declaration-mismatch]
+  394 | /* hidden variable: */  uchar floor;
+      |                               ^~~~~
+In file included from pan.c:31:
+pan.h:394:31: warning: built-in function ‘floor’ declared as non-function [-Wbuiltin-declaration-mismatch]
+  394 | /* hidden variable: */  uchar floor;
+      |                               ^~~~~

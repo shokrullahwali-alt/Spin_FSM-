@@ -1,0 +1,15 @@
+Safety (FIFO): ✓ PASSED
+Safety (SCAN): ✓ PASSED
+FIRE liveness (simple): ✓ PASSED - label reachable
+FIRE liveness (FIFO full): ⚠ TIMEOUT/PARTIAL - state space too large
+VIP liveness (simple): ✓ PASSED - label reachable
+VIP liveness (SCAN full): ⚠ TIMEOUT/PARTIAL - state space too large
+Safety (FIFO): ✓ PASSED
+Safety (SCAN): ✓ PASSED
+FIRE liveness (simple): ✓ PASSED - label reachable
+FIRE liveness (FIFO full): ⚠ TIMEOUT/PARTIAL - state space too large
+VIP liveness (simple): ✓ PASSED - label reachable
+Normal liveness (elevator_normal_simple_1.pml): ✓ PASSED - label reachable
+Normal liveness (elevator_normal_simple_2.pml): ✓ PASSED - label reachable
+Normal liveness (FIFO full): ⚠ TIMEOUT/PARTIAL - state space too large
+VIP liveness (SCAN full): ⚠ TIMEOUT/PARTIAL - state space too large

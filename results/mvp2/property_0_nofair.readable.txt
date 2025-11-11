@@ -1,0 +1,13 @@
+spin: warning, "model_for_trace_ws.pml" is newer than model_for_trace_ws.pml.trail
+  3:	proc  1 (?) #processes: 0
+		floor = 0
+		target = 0
+		mode = NORMAL
+		door = CLOSED
+		moving = 0
+		rq[0] = 0
+		rq[1] = 0
+		vip_req = 0
+		vip_dest = 0
+  3:	proc  - (never_0:1) model_for_trace_ws.pml:170 (state 3)
+1 processes created

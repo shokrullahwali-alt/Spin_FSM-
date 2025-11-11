@@ -1,0 +1,15 @@
+In file included from pan.c:7530:
+pan.b: In function ‘new_state’:
+pan.b:88:39: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+   88 |                 now.rq[ Index(3, 2) ] = trpt->bup.oval;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from pan.c:31:
+pan.h:429:15: note: at offset 3 into destination object ‘rq’ of size 2
+  429 |         uchar rq[2];
+      |               ^~
+pan.b:82:39: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+   82 |                 now.rq[ Index(2, 2) ] = trpt->bup.oval;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+pan.h:429:15: note: at offset 2 into destination object ‘rq’ of size 2
+  429 |         uchar rq[2];
+      |               ^~

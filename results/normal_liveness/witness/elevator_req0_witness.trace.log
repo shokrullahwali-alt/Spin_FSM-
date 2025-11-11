@@ -1,0 +1,15 @@
+          LABEL req0_served fired
+spin: elevator_req0_witness.pml:18, Error: assertion violated
+spin: text of failed assertion: assert(0)
+spin: trail ends after 19 steps
+#processes: 2
+		floor = 0
+		door = OPEN
+		moving = 0
+		rq[0] = 0
+		rq[1] = 0
+		rq[2] = 0
+		rq[3] = 0
+ 19:	proc  1 (Monitor:1) elevator_req0_witness.pml:16 (state 7)
+ 19:	proc  0 (:init::1) elevator_req0_witness.pml:29 (state 12) <valid end state>
+2 processes created

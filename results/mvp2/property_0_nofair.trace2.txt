@@ -1,0 +1,5 @@
+/tmp/model_for_trace.pml:163:30: warning: missing terminating ' character
+  163 | tl_spin: expected '\', saw '/'
+      |                              ^
+spin: /tmp/model_for_trace.pml:163, Error: syntax error	saw 'an identifier' near 'tl_spin'
+spin: /tmp/model_for_trace.pml:163, Error: character quote missing: '

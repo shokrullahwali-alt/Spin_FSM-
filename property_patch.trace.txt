@@ -1,0 +1,32 @@
+Never claim moves to line 288	[(!((moving&&(door==OPEN))))]
+  <<<<<START OF CYCLE>>>>>
+spin: trail ends after 3227 steps
+#processes: 3
+		floor = 0
+		target = 0
+		mode = NORMAL
+		door = OPEN
+		moving = 0
+		rq[0] = 1
+		rq[1] = 0
+		rq[2] = 0
+		rq[3] = 0
+		vip_req = 1
+		vip_dest = 1
+		sensor_ok = 0
+		weight = 0
+		door_obstructed = 0
+		q[0] = 0
+		q[1] = 0
+		q[2] = 0
+		q[3] = 0
+		q_head = 0
+		q_tail = 0
+		q_count = 4
+		scan_idx = 0
+		scan_dir_up = 1
+3227:	proc  2 (Elevator:1) model_patch.pml:154 (state 7)
+3227:	proc  1 (Controller:1) model_patch.pml:58 (state 54)
+3227:	proc  0 (:init::1) model_patch.pml:283 (state 22) <valid end state>
+3227:	proc  - (never_0:1) model_patch.pml:287 (state 3)
+4 processes created

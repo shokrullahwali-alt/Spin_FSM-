@@ -1,0 +1,2 @@
+spin: elevator_constrained_4_witness.pml:14, Error: syntax error	saw 'a constant' near 'NORMAL'
+spin: elevator_constrained_4_witness.pml:16, Error: redeclaration of 'floor' statement separator near 'byte'

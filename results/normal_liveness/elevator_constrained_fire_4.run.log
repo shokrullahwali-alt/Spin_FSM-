@@ -1,0 +1,61 @@
+
+(Spin Version 6.5.2 -- 6 December 2019)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	- (none specified)
+	assertion violations	+
+	acceptance   cycles 	- (not selected)
+	invalid end states	+
+
+State-vector 60 byte, depth reached 46, errors: 0
+       45 states, stored
+      146 states, matched
+      191 transitions (= stored+matched)
+       48 atomic steps
+hash conflicts:         0 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.004	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.279	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+    5.341	memory used for DFS stack (-m100000)
+  133.536	total actual memory usage
+
+
+unreached in proctype Controller
+	elevator_constrained_fire_4.pml:36, state 6, "target = floor"
+	elevator_constrained_fire_4.pml:39, state 10, "target = vip_dest"
+	elevator_constrained_fire_4.pml:41, state 12, "mode = NORMAL"
+	elevator_constrained_fire_4.pml:47, state 19, "i = (i+1)"
+	elevator_constrained_fire_4.pml:46, state 20, "(rq[i])"
+	elevator_constrained_fire_4.pml:46, state 20, "else"
+	elevator_constrained_fire_4.pml:39, state 27, "(vip_req)"
+	elevator_constrained_fire_4.pml:39, state 27, "else"
+	elevator_constrained_fire_4.pml:36, state 29, "(!(sensor_ok))"
+	elevator_constrained_fire_4.pml:36, state 29, "else"
+	elevator_constrained_fire_4.pml:56, state 37, "-end-"
+	(8 of 37 states)
+unreached in proctype Elevator
+	elevator_constrained_fire_4.pml:72, state 14, "moving = 0"
+	elevator_constrained_fire_4.pml:75, state 18, "moving = 0"
+	elevator_constrained_fire_4.pml:84, state 29, "moving = 0"
+	elevator_constrained_fire_4.pml:93, state 43, "-end-"
+	(4 of 43 states)
+unreached in init
+	(0 of 20 states)
+unreached in proctype Monitor
+	elevator_constrained_fire_4.pml:115, state 4, "rq[0] = 0"
+	elevator_constrained_fire_4.pml:115, state 5, "printf('LABEL req0_served fired\n')"
+	elevator_constrained_fire_4.pml:117, state 7, "rq[1] = 0"
+	elevator_constrained_fire_4.pml:117, state 8, "printf('LABEL req1_served fired\n')"
+	elevator_constrained_fire_4.pml:119, state 10, "rq[2] = 0"
+	elevator_constrained_fire_4.pml:119, state 11, "printf('LABEL req2_served fired\n')"
+	elevator_constrained_fire_4.pml:121, state 13, "rq[3] = 0"
+	elevator_constrained_fire_4.pml:121, state 14, "printf('LABEL req3_served fired\n')"
+	elevator_constrained_fire_4.pml:124, state 20, "-end-"
+	(9 of 20 states)
+unreached in init
+	(0 of 2 states)
+
+pan: elapsed time 0 seconds

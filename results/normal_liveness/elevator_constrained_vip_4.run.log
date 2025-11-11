@@ -1,0 +1,52 @@
+
+(Spin Version 6.5.2 -- 6 December 2019)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	- (none specified)
+	assertion violations	+
+	acceptance   cycles 	- (not selected)
+	invalid end states	+
+
+State-vector 60 byte, depth reached 96, errors: 0
+       83 states, stored
+      424 states, matched
+      507 transitions (= stored+matched)
+     1351 atomic steps
+hash conflicts:         0 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.007	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.279	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+    5.341	memory used for DFS stack (-m100000)
+  133.536	total actual memory usage
+
+
+unreached in proctype Controller
+	elevator_constrained_vip_4.pml:36, state 6, "target = floor"
+	elevator_constrained_vip_4.pml:56, state 37, "-end-"
+	(2 of 37 states)
+unreached in proctype Elevator
+	elevator_constrained_vip_4.pml:72, state 14, "moving = 0"
+	elevator_constrained_vip_4.pml:75, state 18, "moving = 0"
+	elevator_constrained_vip_4.pml:84, state 29, "moving = 0"
+	elevator_constrained_vip_4.pml:93, state 43, "-end-"
+	(4 of 43 states)
+unreached in init
+	(0 of 20 states)
+unreached in proctype Monitor
+	elevator_constrained_vip_4.pml:116, state 5, "rq[0] = 0"
+	elevator_constrained_vip_4.pml:116, state 6, "printf('LABEL req0_served fired\n')"
+	elevator_constrained_vip_4.pml:118, state 8, "rq[1] = 0"
+	elevator_constrained_vip_4.pml:118, state 9, "printf('LABEL req1_served fired\n')"
+	elevator_constrained_vip_4.pml:120, state 11, "rq[2] = 0"
+	elevator_constrained_vip_4.pml:120, state 12, "printf('LABEL req2_served fired\n')"
+	elevator_constrained_vip_4.pml:122, state 14, "rq[3] = 0"
+	elevator_constrained_vip_4.pml:122, state 15, "printf('LABEL req3_served fired\n')"
+	elevator_constrained_vip_4.pml:125, state 21, "-end-"
+	(9 of 21 states)
+unreached in init
+	(0 of 2 states)
+
+pan: elapsed time 0 seconds
